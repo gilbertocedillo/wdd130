@@ -1,0 +1,14 @@
+section {
+padding:15px;
+}
+
+h1 {
+    width: 350px;  
+    background-color: rgb(181, 180, 182);
+    margin:50px;
+    border:2px solid white;
+    border-radius: 50px;
+    color:rgb(240, 115, 12);
+    text-align-last: left;
+     
+}
