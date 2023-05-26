@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(133, 131, 130, 0.836);
+    grid-template-rows: -1fr;
+  }
+   
+  .Container {
+    width: 6000px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 200px;
+
+  }
+
+   .Container img{
+
+    width: 100%;
+    height: 100%;
+
+   }
+
+   .Container P {
+    font-size: 2.6em
+    color: 
+    position:large
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, 50%)
+
+   }
