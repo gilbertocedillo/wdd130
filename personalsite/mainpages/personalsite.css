@@ -218,7 +218,7 @@ text-align: center;
 }
 
 .Services-1 {
-    padding: 40 75px;
+    padding: 2px 75px;
 }
 
 .Services-1 img {
@@ -390,7 +390,7 @@ link h3 {
         width: 100%;
     }
 
-    #menu:checked ~ , .navbar {
+     .navbar {
         display: initial;
     }
 
@@ -448,7 +448,7 @@ link h3 {
     }
 
     .general-1 {
-        width: 100;
+        width: 100em;
         padding: 30px;
         text-align: center;
     }

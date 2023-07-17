@@ -214,7 +214,7 @@ link h3 {
         width: 100%;
     }
 
-    #menu:checked ~ , .navbar {
+    .navbar {
         display: initial;
     }
 
