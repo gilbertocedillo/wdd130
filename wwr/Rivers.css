@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #396E94   ;
+    --secondary-color: #E7C24F ;
+    --accent1-color: #A42212;
+    --accent2-color: white;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "IM Fell French Canon";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #396E94  ;
+    --nav-link-color: #396E94;
+    --nav-background-color: #D4AC0D;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #396E94;
+  }
+
+body {
+    background-color: #fff;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+#content { /* for larger monitors so page is not overwhelmingly large */
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #6C5810;
+}
+img.logo {
+    width: 80px;
+}
+#logo_link{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    padding-top: 5px;
+}
+nav {
+    grid-row: 1/2;
+    grid-column: 2/7;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    width: 100%;
+    height: 100px;
+}
+nav a {
+    text-decoration: none;
+    color: #fcfbfb;
+    padding: 35px;
+    text-align: center;
+    
+}
+nav a:hover {
+    color: #d9c2a3;
+}
+
+/* Hero Images and message */
+#hero {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: -100px; 
+}
+#hero-box {
+    grid-column: 1/7;
+    grid-row: 1/5;
+    z-index: -1;
+}
+#hero-img {
+    width: 100%;
+}
+#hero-msg {
+    grid-column: 1/6;
+    grid-row: 1/3;
+    margin-top: 100px;
+}
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+    color: var(--headline-color-on-white);
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+}
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #d9c2a3;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+h4 {
+    color:var(--headline-color-on-white);
+}
+
+/* Buttons */
+.button-box {
+    text-align: center;
+}
+.book, .join {
+    background-color: #d9c2a3;
+    color: #fcfbfb;
+    padding: 15px 30px;
+    margin-top: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.book:hover, .join:hover {
+    background-color: #9d9c88;
+    color: #fcfbfb;
+}
+
+/* Main Home Page */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    margin: 0 auto;
+    max-width: 1500px;
+}
+main section { 
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100%;
+}
+main section img {
+    width: 100%;
+    box-sizing: border-box;
+}
+.boat, .mountain, .camp {
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #D4AC0D;
+}
+.boat:hover, .mountain:hover, .camp:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+section h2 {
+    margin: 0; 
+}
+.oars, .river, .fire{
+    padding-top: 10px;
+    width: 80px;
+}
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/4; 
+}
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/4;
+}
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/4; 
+}
+#background {
+    grid-column: 1/11;
+    grid-row: 7/14;
+    background-color: #d9c2a3;
+    height: 725px;
+}
+.mountains {
+    grid-column: 2/7;
+    grid-row: 8/13;
+    box-shadow: 5px 5px 10px #D4AC0D;
+}
+.msg {
+    grid-column: 6/10;
+    grid-row: 9/12;
+    background-color: #D4AC0D;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #D4AC0D;
+    line-height: 1.5em;
+}
+.msg h2 {
+    margin: 0;
+    color: #fcfbfb;
+}
+.msg p {
+    font-size: .8em;
+    color: #fcfbfb;
+    padding-bottom: 15px;
+}
+/* Footer */
+footer {
+    background-color: #6C5810;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 25px 50px;
+}
+footer .social img {
+    padding-top: 15px;
+    width: 50px;
+    display: inline-block;
+}
+footer h3 {
+    color: #d9c2a3;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color:black;
+    text-decoration: underline;
+}
+.social {
+    justify-self: end;
+}
+
+/* Rivers CSS */
+
+.active {
+    color: #d9c2a3;
+    background-color: black; 
+}
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 2em;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.rivers-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color:#6C5810;
+    margin: 100px 0;
+    grid-column: 2/8;
+    grid-row: 1/2;
+    justify-self: stretch;
+    text-align: center;
+}
+.river1-img {
+    grid-column: 2/5;
+    grid-row: 2/5;
+    width: 100%;
+    box-shadow: 5px 5px 10px #D4AC0D;
+}
+.river1-text {
+    grid-column: 4/7;
+    grid-row: 3/4;
+}
+.river2-img {
+    grid-column: 5/8;
+    grid-row: 6/9;
+    width: 100%;
+    box-shadow: 5px 5px 10px #D4AC0D;
+}
+.river2-text {
+    grid-column: 3/6;
+    grid-row: 7/8;
+}
+.river1-text, .river2-text {
+    background-color: #E7C24F;
+    overflow: hidden; /* ADDED */
+    height: auto; /* ADDED */
+    height: 250px;
+    padding: 35px;
+    line-height: 1.5em;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+/* media queries will just be given and explained briefly */
+@media screen and (max-width: 900px) {
+    nav, #hero, .home-grid, footer {
+      display: block;
+      height: auto;
+    }
+    header {
+        grid-template-columns: 150px auto;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #D4AC0D;
+    }
+    main section { 
+        margin: 50px auto;
+        width: 80%;
+    }
+    main section img {
+        margin-top: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+    
+    /* Rivers page -- they will do their own responsiveness on child pages if they want it */
+    .rivers-grid {
+        display: block;
+        margin: 10px;
+    }
+    .rivers-title {
+        margin: 25px;
+    }
+    .river1-text, .river2-text {
+        overflow: visible;
+        height: auto;
+    }
+
+}
